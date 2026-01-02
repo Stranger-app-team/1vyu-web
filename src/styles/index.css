@@ -1,0 +1,24 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+body {
+  font-family: var(--font-family-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+}
+
+/* Responsive media queries */
+@media (max-width: 767px) {
+  :root {
+    --spacing-mobile: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --spacing-desktop: 40px;
+  }
+}
